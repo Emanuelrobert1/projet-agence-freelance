@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agence Freelance — Projet</title>
+  <meta name="description" content="Agence freelance spécialisée en design, développement web et marketing digital.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Agence Freelance</h1>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">À propos</a>
+        <a href="#contact" class="button">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Nous aidons les petites entreprises à grandir en ligne</h2>
+        <p>Design, développement web et stratégie digitale sur mesure pour vos projets.</p>
+        <a href="#contact" class="cta">Demander un devis</a>
+      </div>
+    </section>
+
+    <section id="services" class="services container">
+      <h3>Nos services</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>Design & Branding</h4>
+          <p>Création d'identités visuelles, logos, et supports marketing cohérents.</p>
+        </article>
+        <article class="card">
+          <h4>Développement Web</h4>
+          <p>Sites vitrines, boutiques en ligne, et applications performantes et accessibles.</p>
+        </article>
+        <article class="card">
+          <h4>Marketing Digital</h4>
+          <p>SEO, campagnes publicitaires, et stratégie de contenu pour augmenter votre visibilité.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio container">
+      <h3>Portfolio</h3>
+      <div class="grid">
+        <div class="project">Projet A — Site vitrine</div>
+        <div class="project">Projet B — Boutique e‑commerce</div>
+        <div class="project">Projet C — Refonte branding</div>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h3>À propos</h3>
+      <p>Nous sommes une équipe de freelances passionnés par la création d'expériences en ligne efficaces et esthétiques. Nous travaillons avec des entrepreneurs et PME pour transformer leurs idées en produits concrets.</p>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h3>Contact</h3>
+      <p>Envoyez-nous un message pour discuter de votre projet :</p>
+      <form action="#" method="post" class="contact-form">
+        <label for="name">Nom</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="button">Envoyer</button>
+      </form>
+      <p class="note">(Formulaire statique — configurez un back-end ou un service tiers pour gérer les envois.)</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Agence Freelance — Tous droits réservés</p>
+      <div class="social">
+        <a href="#">LinkedIn</a>
+        <a href="#">Behance</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple script to set current year and basic mobile menu toggle
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
